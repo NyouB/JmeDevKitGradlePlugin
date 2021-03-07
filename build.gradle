@@ -10,7 +10,7 @@ compileJava   {
     targetCompatibility = '1.8'
 }
 
-group 'com.jayfella'
+group 'fr.exratio'
 version '0.0.19'
 
 repositories {
@@ -25,15 +25,15 @@ dependencies {
 gradlePlugin {
     plugins {
         jmeDevKitPlugin {
-            id = 'com.jayfella.jme-devkit'
-            implementationClass = 'com.jayfella.devkit.gradle.JmeDevKitGradlePlugin'
+            id = 'fr.exratio.jme-devkit'
+            implementationClass = 'fr.exratio.devkit.gradle.JmeDevKitGradlePlugin'
         }
     }
 }
 
 pluginBundle {
     website = "https://jmonkeyengine.org"
-    vcsUrl = "https://github.com/jayfella/JmeDevKitGradlePlugin"
+    vcsUrl = "https://github.com/NyouB/JmeDevKitGradlePlugin"
     description = "Gradle plugin providing integration with the Jme DevKit application."
     tags = [ "jmonkey", "jmonkeyengine" ]
 
