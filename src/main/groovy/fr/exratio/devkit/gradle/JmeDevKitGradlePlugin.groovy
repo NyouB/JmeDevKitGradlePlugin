@@ -1,4 +1,4 @@
-package com.jayfella.devkit.gradle
+package fr.exratio.devkit.gradle
 
 
 import org.gradle.api.Plugin
@@ -65,7 +65,7 @@ class JmeDevKitGradlePlugin implements Plugin<Project> {
     private void configureTasks() {
 
         project.task("runSdk", type: JavaExec) {
-            main = "com.jayfella.importer.Main"
+            main = "fr.exratio.jme.devkit.Main"
             classpath = project.sourceSets.main.runtimeClasspath
         }
     }
@@ -73,7 +73,7 @@ class JmeDevKitGradlePlugin implements Plugin<Project> {
     private void configureDependencies() {
 
         // include the devkit as a dependency
-        Dependency dep = project.dependencies.create("com.jayfella:jme-swing-devkit:1.0.6")
+        Dependency dep = project.dependencies.create("fr.exratio:jme-swing-devkit:latest.release")
         project.dependencies.add("runtimeOnly", dep)
 
     }

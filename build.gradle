@@ -1,7 +1,7 @@
 plugins {
     id 'groovy'
     id 'java-gradle-plugin'
-    id "com.gradle.plugin-publish" version "0.12.0"
+    id "com.gradle.plugin-publish" version "0.13.0"
     id 'maven'
 }
 
@@ -10,8 +10,8 @@ compileJava   {
     targetCompatibility = '1.8'
 }
 
-group 'com.jayfella'
-version '0.0.18'
+group 'fr.exratio'
+version '1.0.0'
 
 repositories {
     jcenter()
@@ -25,15 +25,15 @@ dependencies {
 gradlePlugin {
     plugins {
         jmeDevKitPlugin {
-            id = 'com.jayfella.jme-devkit'
-            implementationClass = 'com.jayfella.devkit.gradle.JmeDevKitGradlePlugin'
+            id = 'fr.exratio.jme-devkit'
+            implementationClass = 'fr.exratio.devkit.gradle.JmeDevKitGradlePlugin'
         }
     }
 }
 
 pluginBundle {
     website = "https://jmonkeyengine.org"
-    vcsUrl = "https://github.com/jayfella/JmeDevKitGradlePlugin"
+    vcsUrl = "https://github.com/NyouB/JmeDevKitGradlePlugin"
     description = "Gradle plugin providing integration with the Jme DevKit application."
     tags = [ "jmonkey", "jmonkeyengine" ]
 
